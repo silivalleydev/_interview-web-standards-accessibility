@@ -1,6 +1,15 @@
 
 import React from 'react'
+/**
+접근성 측면:
 
+스크린 리더가 입력 필드와 레이블을 정확히 연결.
+레이블을 클릭해도 입력 필드가 활성화되어 사용자 편의성 증가.
+표준 측면:
+
+label과 id는 HTML 표준으로, 폼 컨트롤과의 상호작용을 명시적으로 연결.
+
+ */
 export default function AccessibleForm() {
   return (
     <>

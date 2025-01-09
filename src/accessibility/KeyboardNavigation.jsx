@@ -1,5 +1,15 @@
 import React from 'react'
 
+/**
+접근성 측면:
+
+키보드 전용 사용자도 Enter와 Space 키로 상호작용 가능.
+tabIndex와 role="button"을 추가하여 디브 요소를 버튼처럼 동작.
+표준 측면:
+
+WAI-ARIA 표준 활용으로 비표준 요소에 의미를 부여.
+키보드 내비게이션은 WCAG 표준 요구사항.
+ */
 export default function KeyboardNavigation() {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
