@@ -1,11 +1,17 @@
 ## Lighthouse Accessability 측정 및 수정 포인트 수정 방향
+- [Lighthouse Accessability 측정 및 수정 포인트 수정 방향](#lighthouse-accessability-측정-및-수정-포인트-수정-방향)
+  - [태그 아이디 중복으로 인한 접근성 저하 케이스](#태그-아이디-중복으로-인한-접근성-저하-케이스)
+  - [ARIA input fields do not have accessible names(입력 필드에 액세스 가능한 이름이 없으면 화면 판독기가 이를 일반 이름으로 알려 주므로 화면 판독기에 의존하는 사용자가 사용할 수 없게 됩니다. 이슈)](#aria-input-fields-do-not-have-accessible-names입력-필드에-액세스-가능한-이름이-없으면-화면-판독기가-이를-일반-이름으로-알려-주므로-화면-판독기에-의존하는-사용자가-사용할-수-없게-됩니다-이슈)
+  - [Touch targets do not have sufficient size or spacing.(터치 대상의 크기가 너무 작아 접근성이 떨어짐)](#touch-targets-do-not-have-sufficient-size-or-spacing터치-대상의-크기가-너무-작아-접근성이-떨어짐)
+  - [Heading elements are not in a sequentially-descending order(잘못된 페이지 제목 순서 구조)](#heading-elements-are-not-in-a-sequentially-descending-order잘못된-페이지-제목-순서-구조)
+  - [Displays images with incorrect aspect ratio(원본 이미지와 다른 잘못된 종횡비로 이미지를 표시하는 경우)](#displays-images-with-incorrect-aspect-ratio원본-이미지와-다른-잘못된-종횡비로-이미지를-표시하는-경우)
 
-#### 태그 아이디 중복으로 인한 접근성 저하 케이스
+### 태그 아이디 중복으로 인한 접근성 저하 케이스
 ![alt text](image.png)
 - id는 한 문서에 같은 id가 중복해서 있는경우 위와 같이 이미지가 뜸
 - 따라서 두 태그의 아이디가 같다면 서로 다른 아이디를 지정해줘야함
 
-### 입력 필드에 액세스 가능한 이름이 없으면 화면 판독기가 이를 일반 이름으로 알려 주므로 화면 판독기에 의존하는 사용자가 사용할 수 없게 됩니다. 이슈
+### ARIA input fields do not have accessible names(입력 필드에 액세스 가능한 이름이 없으면 화면 판독기가 이를 일반 이름으로 알려 주므로 화면 판독기에 의존하는 사용자가 사용할 수 없게 됩니다. 이슈)
 ![alt text](image-1.png)
 - 기존 코드의 문제점
   - listbox에 에 매핑된 aria-label이 없어 생기는 문제
@@ -85,7 +91,7 @@ export default function KeyboardList() {
 
 ```
 
-### 터치 대상의 크기가 너무 작아 접근성이 떨어짐
+### Touch targets do not have sufficient size or spacing.(터치 대상의 크기가 너무 작아 접근성이 떨어짐)
 - 터치 대상의 영역이 아래와 같이 작은 경우 사용자가 정확히 누르기 어렵고 모바일에선 손가락으로 눌러야하기에 더 누르기가 힘들어 접근성이 떨어짐
 ![alt text](image-2.png)
 ![alt text](image-3.png)
@@ -127,7 +133,7 @@ summary {
 }
 ```
 
-### 잘못된 페이지 제목 순서 구조
+### Heading elements are not in a sequentially-descending order(잘못된 페이지 제목 순서 구조)
 - 문서 구조에서 제목의 순서는 항상 h1, h2, h3, h4 순으로 구성되어야 하며, 계층을 건너뛰거나 무작위로 사용해서는 안된다.
 - 최상위 제목이 h2라면 h2부터 순서대로 배치되어야함
 ![alt text](image-4.png)
@@ -143,7 +149,7 @@ summary {
 <h3>이건 제목</h3>
 ```
 
-### 원본 이미지와 다른 잘못된 종횡비로 이미지를 표시하는 경우
+### Displays images with incorrect aspect ratio(원본 이미지와 다른 잘못된 종횡비로 이미지를 표시하는 경우)
 - 원본 이미지의 비율과 다르게 렌더링하는 경우 발생
 ![alt text](image-5.png)
 
