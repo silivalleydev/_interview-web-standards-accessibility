@@ -1,5 +1,5 @@
-## Lighthouse Accessability 측정 및 수정 포인트 수정 방향
-- [Lighthouse Accessability 측정 및 수정 포인트 수정 방향](#lighthouse-accessability-측정-및-수정-포인트-수정-방향)
+## Lighthouse Accessability 측정 및 수정 방향
+- [Lighthouse Accessability 측정 및 수정 방향](#lighthouse-accessability-측정-및-수정-방향)
   - [태그 아이디 중복으로 인한 접근성 저하 케이스](#태그-아이디-중복으로-인한-접근성-저하-케이스)
   - [ARIA input fields do not have accessible names(입력 필드에 액세스 가능한 이름이 없으면 화면 판독기가 이를 일반 이름으로 알려 주므로 화면 판독기에 의존하는 사용자가 사용할 수 없게 됩니다. 이슈)](#aria-input-fields-do-not-have-accessible-names입력-필드에-액세스-가능한-이름이-없으면-화면-판독기가-이를-일반-이름으로-알려-주므로-화면-판독기에-의존하는-사용자가-사용할-수-없게-됩니다-이슈)
   - [Touch targets do not have sufficient size or spacing.(터치 대상의 크기가 너무 작아 접근성이 떨어짐)](#touch-targets-do-not-have-sufficient-size-or-spacing터치-대상의-크기가-너무-작아-접근성이-떨어짐)
