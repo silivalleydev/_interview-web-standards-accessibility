@@ -3,7 +3,7 @@ import React from 'react'
 export default function AccessibleInput() {
   return (
     <>
-    <h4>aria-describedby는 추가 정보를 연결하여 사용자에게 도움말을 제공합니다.</h4>
+    <h2>aria-describedby는 추가 정보를 연결하여 사용자에게 도움말을 제공합니다.</h2>
     <div>
       <label htmlFor="email">이메일</label>
       <input

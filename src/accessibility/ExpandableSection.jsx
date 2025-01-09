@@ -5,7 +5,7 @@ export default function ExpandableSection() {
 
   return (
     <>
-    <h4>aria-expanded는 요소의 상태(열림/닫힘)를 전달합니다.</h4>
+    <h2>aria-expanded는 요소의 상태(열림/닫힘)를 전달합니다.</h2>
     <div>
       <button
         aria-expanded={isOpen}

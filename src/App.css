@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+nav > ul > li > a {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
+}
+summary {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+img {
+  object-fit: cover; /* 또는 contain */
+}
