@@ -1,5 +1,7 @@
 # 웹 표준과 접근성
 
+해당 문서와 관련된 문서: [Lighthouse Accessability 측정 및 수정 포인트 수정 방향](./LIGHTHOUSE_FIX_POINT.md)
+
 - [웹 표준과 접근성](#웹-표준과-접근성)
   - [1. 웹 표준(Web Standards)](#1-웹-표준web-standards)
     - [정의](#정의)
