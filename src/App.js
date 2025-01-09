@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import AccessibleButton from './accessibility/AccessibleButton';
+import AccessibleForm from './accessibility/AccessibleForm';
+import KeyboardNavigation from './accessibility/KeyboardNavigation';
+import AccessibleImage from './accessibility/AccessibleImage';
+import AccessibleAlert from './accessibility/AccessibleAlert';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AccessibleButton/>
+      <AccessibleForm/>
+      <KeyboardNavigation/>
+      <AccessibleImage/>
+      <AccessibleAlert/>
     </div>
   );
 }
