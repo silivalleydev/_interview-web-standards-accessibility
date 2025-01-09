@@ -11,6 +11,8 @@ import KeyboardList from './accessibility/KeyboardList';
 import HighContrastButton from './accessibility/HighContrastButton';
 import AccessibleInput from './accessibility/AccessibleInput';
 import ExpandableSection from './accessibility/ExpandableSection';
+import SkipToContent from './accessibility/SkipToContent';
+import FormWithError from './accessibility/FormWithError';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <HighContrastButton/>
       <AccessibleInput/>
       <ExpandableSection/>
+      <SkipToContent/>
+      <FormWithError/>
     </div>
   );
 }
