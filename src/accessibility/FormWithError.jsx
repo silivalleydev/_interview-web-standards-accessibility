@@ -12,9 +12,9 @@ export default function FormWithError() {
     <>
     <h4>에러 메시지를 aria-invalid와 aria-describedby로 연결하여 접근성을 높입니다.</h4>
     <form onSubmit={handleSubmit}>
-      <label htmlFor="username">사용자 이름</label>
+      <label htmlFor="name">사용자 이름</label>
       <input
-        id="username"
+        id="name"
         type="text"
         aria-invalid={!!error}
         aria-describedby="errorMessage"
